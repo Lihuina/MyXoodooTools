@@ -1,0 +1,98 @@
+Difference of χ in one Column: 00
+0  00
+Affine description: 00 + <>
+
+Difference of χ in one Column: 01
+2  01
+2  03
+2  05
+2  07
+Affine description: 01 + <02, 04>
+
+Difference of χ in one Column: 02
+2  02
+2  03
+2  06
+2  07
+Affine description: 02 + <04, 01>
+
+Difference of χ in one Column: 03
+2  01
+2  02
+2  05
+2  06
+Affine description: 01 + <03, 04>
+
+Difference of χ in one Column: 04
+2  04
+2  05
+2  06
+2  07
+Affine description: 04 + <01, 02>
+
+Difference of χ in one Column: 05
+2  01
+2  03
+2  04
+2  06
+Affine description: 04 + <05, 02>
+
+Difference of χ in one Column: 06
+2  02
+2  03
+2  04
+2  05
+Affine description: 02 + <06, 01>
+
+Difference of χ in one Column: 07
+2  01
+2  02
+2  04
+2  07
+Affine description: 07 + <03, 06>
+
+Difference of χ^-1 in one Column: 00
+0  00
+
+Difference of χ^-1 in one Column: 01
+2  01
+2  03
+2  05
+2  07
+
+Difference of χ^-1 in one Column: 02
+2  02
+2  03
+2  06
+2  07
+
+Difference of χ^-1 in one Column: 03
+2  01
+2  02
+2  05
+2  06
+
+Difference of χ^-1 in one Column: 04
+2  04
+2  05
+2  06
+2  07
+
+Difference of χ^-1 in one Column: 05
+2  01
+2  03
+2  04
+2  06
+
+Difference of χ^-1 in one Column: 06
+2  02
+2  03
+2  04
+2  05
+
+Difference of χ^-1 in one Column: 07
+2  01
+2  02
+2  04
+2  07
+

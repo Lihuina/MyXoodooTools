@@ -1,2 +1,2 @@
 # MyXoodooTools
-Based on the previous xoodootool, I add two functions  to the main function:testXoodoo() and testXoodooDCLC()
+Based on the previous xoodootool, add two functions  to the main function:testXoodoo() and testXoodooDCLC()

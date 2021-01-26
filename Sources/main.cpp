@@ -40,8 +40,6 @@ void testXoodoo()
     xoodoo.permute(xoodoostate,12);
     ofstream ofs("testxoodoooutput-dir.txt");
     xoodoostate.save(ofs);
-    //ifstream iifs("testxoodoooutput-dir.txt");
-    //xoodoostate.load(iifs);
     xoodoo.inverse(xoodoostate,12);
     ofstream oofs("testxoodoooutput-inv.txt");
     xoodoostate.save(oofs);

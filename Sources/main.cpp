@@ -19,29 +19,32 @@ http://creativecommons.org/publicdomain/zero/1.0/
 #include <string>
 #include <vector>
 #include "Xoodoo3RoundTrailCoreGeneration.h"
+//#include "Xoodoo2RoundTrailCoreGeneration.h"
 #include "XoodooPropagation.h"
 #include "XoodooTrailExtension.h"
 #include "XoodooTrails.h"
 #include "XoodooAffineBases.h"
 #include "XoodooDCLC.h"
-#include "XoodooParts.h"
+
 using namespace std;
 
 
+/* Example function that uses the Xoodoo permutation and its inverse.*/
 void testXoodoo()
-{   
-	XoodooLanes xoodoolanes(12);
-	ifstream ifs("testxoodooinput.txt");
-	
-	xoodoolanes.load(ifs);
-	Xoodoo xoodoo;
-	cout << "****" << xoodoo << endl;
-	XoodooState xoodoostate(xoodoo);
-	xoodoo.permute(xoodoostate, 1);
-    ofstream ofs("testxoodoooutput.txt");
-	xoodoolanes.save(ofs);
-
-
+{
+    Xoodoo xoodoo;
+    cout << "*** " << xoodoo << endl;
+    XoodooState xoodoostate(xoodoo);
+    ifstream ifs("testxoodooinput.txt");
+    xoodoostate.load(ifs);
+    xoodoo.permute(xoodoostate,12);
+    ofstream ofs("testxoodoooutput-dir.txt");
+    xoodoostate.save(ofs);
+    //ifstream iifs("testxoodoooutput-dir.txt");
+    //xoodoostate.load(iifs);
+    xoodoo.inverse(xoodoostate,12);
+    ofstream oofs("testxoodoooutput-inv.txt");
+    xoodoostate.save(oofs);
 }
 /* Example function that displays DC propagation on columns*/
 
@@ -133,8 +136,8 @@ int main(int argc, char *argv[])
 		//generateEquations();
 		//generateCode();
 		//testKeccakF25LUT();
-		testXoodoo();
 		//testXoodooDCLC();
+        testXoodoo();
 		//displayTrails();
 		//extendTrailAtTheEnd();
 		//extendTrailAtTheBeginning();

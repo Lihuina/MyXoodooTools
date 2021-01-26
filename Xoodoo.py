@@ -131,5 +131,6 @@ class State:
 
 xp = Xoodoo()
 A = State()
-for i in range(384): A = xp.Permute(A, 12)
+#for i in range(384): A = xp.Permute(A, 12)
+A = xp.Permute(A, 12)
 print(A)
